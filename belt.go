@@ -52,7 +52,7 @@ func (c *beltCipher) Encrypt(dst, src []byte) {
         panic("belt: output not full block")
     }
 
-    if alias.InexactOverlap(dst[:BlockSize], src[:BlockSize]) {
+    if subtle.InexactOverlap(dst[:BlockSize], src[:BlockSize]) {
         panic("belt: invalid buffer overlap")
     }
 
@@ -68,7 +68,7 @@ func (c *beltCipher) Decrypt(dst, src []byte) {
         panic("belt: output not full block")
     }
 
-    if alias.InexactOverlap(dst[:BlockSize], src[:BlockSize]) {
+    if subtle.InexactOverlap(dst[:BlockSize], src[:BlockSize]) {
         panic("belt: invalid buffer overlap")
     }
 
