@@ -4,7 +4,7 @@ import (
     "fmt"
     "crypto/cipher"
 
-    "github.com/pedroalbanese/curupira1/internal/subtle"
+    "github.com/pedroalbanese/belt/internal/subtle"
 )
 
 // BELT block cipher, defined in STB 34.101.31
