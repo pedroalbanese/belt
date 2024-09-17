@@ -1,4 +1,4 @@
-package belt
+package belthash
 
 import (
     "hash"
